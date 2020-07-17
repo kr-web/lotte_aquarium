@@ -1,0 +1,397 @@
+/* main.css */
+:root{font-size:16px;}
+html {scroll-behavior: smooth;}
+.radius_Box {width:250px; height:250px; border-radius:125px; background-color: #fff;
+             font-weight: bold; font-size:18px;}
+
+/* #wrap ========================================================================== */
+#wrap {width:100%; height:100%; margin:auto;}
+
+/* #headBox ========================================================================== */
+#headBox {position:fixed; z-index:1000; top:0; left:50%; transform: translateX(-50%);
+          width:80%; height:100px; color:#333; text-align:center;
+          padding:50px; box-sizing: border-box;}
+    h1 {float:left; width:200px; height:80px; font-size:16pt; color:#fff;}
+
+    .gnb {float:right; width:1000px; height:80px;}
+    .gnb ul {width:100%; height:100%; color:#fff;}
+    .gnb ul > li {float:left; width:150px; height:100%;}
+      .gnb dl {width:100%; height:auto; text-align: center;}
+      .gnb dt {width:100%; height:100%; line-height:30px; font-weight:bold; margin-bottom: 10px;}
+      .gnb dd {width:100%; height:auto; display:none;}
+      .gnb dd > ul {width:100%; height:auto; }
+      .gnb dd > ul li {width:100%; height:30px;}
+
+      .gnb a {display: block; width:100%; height:100%;}
+      .gnb a:hover,
+      .gnb a:focus {font-weight:bold; color:#87cefa;} 
+      .gnb ul > li:last-child {margin-right:0}
+      .gnb li:hover dd {display: block; }
+
+/* #indiBox ========================================================================== */
+  #indiBox{
+    position:fixed; z-index:1000;
+    top:50%; left:2%; transform:translateY(-50%);
+    width:70px; height:auto;
+    padding:10px; box-sizing: border-box;
+  }
+
+  .indicator{
+    width:100%; height:100%;
+  }
+
+  .indicator > ul{
+    width:100%; height:100%;
+  }
+
+  .indicator li {
+    width:50px; height:50px;
+    margin-bottom:10px;
+    border-radius: 25px;
+    background-image: url(../../img/main/guideBox/bubble.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .indicator li:last-child {margin-bottom: 0;}
+
+  .indicator li a{display:block; width:100%; height:100%;}
+
+/* #viewBox ========================================================================== */
+#viewBox {
+  position: relative; z-index:300;
+  width:100%; height:100%;
+  text-align:center; color:#fff;
+  background-image: url(../../img/main/bg/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 50%;}
+
+  .view_title{
+    position: absolute; z-index:800;
+    top:40%; left:50%; transform: translateX(-50%);
+  }
+
+  .view_title p {font-size:25pt;}
+  .view_title h2 {font-size:55pt;}
+
+/* #guideBox ========================================================================= */
+#guideBox {
+  width:100%; height:100%; 
+  background-image: url(../../img/main/bg/underthesea.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;}
+
+  .guide_title {
+    float:left; 
+    width:800px; height:20%; 
+    margin-top:400px; margin-left:300px;
+    color:#fff;}
+
+  .guide_title h3 {width:100%; height:50%;font-size:55pt; text-shadow: -0.2rem 0.2rem #333;}
+  .guide_title p {width:100%; height:50%; font-size:20pt; padding-top:0;}
+
+  .guide_area {float:right; margin-right:200px; margin-top:180px; 
+               width:472px; height:612px; text-align:center;}
+
+    .radius_Box{
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      width:250px; height:250px;
+      border-radius: 125px;
+      box-shadow: 0.1rem 0.2rem 0.3rem #fff;
+    }
+
+    .radius_Box > span{
+      position: absolute; bottom:-40px; left:25%;
+      width:150px; color:#fff; font-size:0.875rem;
+      font-weight: normal;
+    }
+
+    .guide_01 {
+      float:left; 
+      background-image: url(../../img/main/guideBox/CM0428_4.png);}
+
+    .guide_02 {
+      float:right; margin-top:-62px; 
+      background-image: url(../../img/main/guideBox/CM0428_5.png);}
+
+    .guide_03 {
+      margin-top:360px; 
+      background-image: url(../../img/main/guideBox/bubble.png);}
+
+/* #infoBox ========================================================================== */
+#infoBox {
+  width:100%; height:100%; color:#fff;
+  background-image: url(../../img/main/bg/underthesea1-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: 0 0;}
+
+  .info_title {
+    margin-top:200px; padding-right:200px;
+    float:right; text-align: right;
+    width: 100%; font-size:55pt;
+  }
+  .info_title h3 {text-shadow: 0.2rem 0.2rem #333;}
+
+  .info_area {float:right; margin-top:100px; margin-right:200px;
+              width:980px; height:300px;}
+
+    .info{
+      width:480px; height:300px; 
+      border-radius:40px; background-color: #f5f6f7;
+      border:2px solid #ccc;}
+
+    .info_time {float:left;}
+      .info_01 {margin-left:20px; font-weight: bold; font-size:30px; color:#333;}
+      .info_02 {margin-left:20px; font-weight: bold; font-size:35px; color:#333;}
+      .info_03 {margin-left:20px; font-weight: bold; font-size:20px; color:#004771;}
+
+    .info_pay {float:right;}
+
+      .info_pay_box{
+        width:200px; height:48px;
+        background-color: #fff; color:#004771;
+        font-weight: bold; font-size:20px;
+        border-radius:12px; 
+      }
+
+      .info_pay_box > a{
+        display:block; width:100%; height:100%;
+        line-height: 48px;
+      }
+
+      .info_pay_box:hover{
+        background-color: #333; color:#fff;
+      }
+
+      .info_pay_01 {float:left; margin-left:30px; }
+      .info_pay_02 {float:right; margin-right:30px;}
+
+/* #programBox ========================================================================== */
+#programBox {
+  width:100%; height:100%;
+  background-image: url(../../img/main/bg/underthesea1-2.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 42%;
+  background-size: cover;}
+
+  .program_title {
+    float:left; 
+    width:800px; height:20%; 
+    margin-top:400px; margin-left:300px;
+    color:#fff;}
+
+    .program_title h3 {width:100%; height:50%;font-size:55pt; text-shadow: -0.2rem 0.2rem #333;}
+    .program_btn {width:150px; height:40px; border-radius:12px; font-size:15pt; 
+                color:#fff; font-weight:bold; border-width: 2px; border: 2px solid #fff; }
+
+    .program_btn:hover {background-color: #eee; color:#111;}
+
+  .program_area {float:right; margin-right:50px; margin-top:180px; 
+               width:472px; height:612px; text-align:center;}
+
+    .program_01 {
+      float:left;
+      background-image: url(../../img/main/guideBox/bubble.png);}
+
+    .program_02 {
+      float:right; margin-top:-62px;
+      background-image: url(../../img/main/guideBox/bubble.png);}
+
+    .program_03 {
+      margin-top:360px; width:250px;
+      background-image: url(../../img/main/guideBox/bubble.png);}
+
+/* #noticeBox ========================================================================== */
+#noticeBox {
+  width:100%; height:100%; color:#fff;
+  background-image: url(../../img/main/bg/underthesea.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: cover;}
+
+  .notice_title {
+    margin-top:200px; padding-right:200px;
+    float:right; text-align: right;
+    width: 100%; font-size:55pt;}
+
+  .notice_area {
+    float:right;
+    margin-right:200px; margin-top:50px;
+    width:904px; height:408px;
+    }
+
+    .notice_contents{
+      width:440px; height:408px;
+      padding:30px; box-sizing: border-box;
+      border:2px solid #fff;
+      border-radius: 40px; background-color: #f5f6f7;
+    }
+
+      .notice_contents h4{
+        float:left;
+        width:80%; height:36px;
+        padding-left:5%; box-sizing: border-box;
+        color:#333; font-size: 24pt;
+      }
+
+      .notice_contents > a {
+        float:right; width:20%; height: 36px;
+        line-height: 36px;
+        font-size:12pt; color:#333;}
+
+    .area_noticeBox {float:left; }
+    
+    .area_noticeBox > ul{
+      padding-top:60px;
+      width:100%; height:80px;
+    }
+
+    .area_noticeBox li{
+      width:90%; height:80px;
+      margin:auto;
+      border-bottom: 2px solid #333;
+    }
+
+    .area_noticeBox li a{
+      display: block;
+      width:100%; height:100%;
+    }
+
+    .area_noticeBox li a span{
+      display: block;
+      width:100%; height:50px;
+      padding-top:20px; box-sizing:border-box; color:#333;
+      font-size: 13pt; font-weight: bold;
+    }
+
+    .area_noticeBox li a .date{
+      padding-top:10px; font-size:11pt; 
+    }
+  
+    
+    .area_eventBox {float:right;}
+
+    .area_eventBox > div{
+      width:230px; height:230px;
+      margin:auto; margin-top:50px;
+      border-radius: 100%;
+      background-image: url(../../img/main/noticeBox/event_default.gif);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    .area_eventBox p {
+      color:#333;
+      width:100%; height:50px;
+      text-align:center;
+      padding-top:20px;
+      font-size:12pt;
+    }
+
+
+/* #footBox =============s============================================================= */
+
+#footBox {
+  width:100%; height:300px;
+  background-color:#425067;
+}
+
+  .footer_logo {
+    float:left; margin-top:50px; margin-left:300px;
+    width:150px; height:80px; 
+    background-image: url(../../img/main/footer/footer_logo.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;}
+
+    .footer_logo a{
+      display:block; width:100%; height:100%;
+    }
+
+  .snsBox{
+    float:right; margin-top:50px; margin-right: 300px; 
+    width:110px; height:50px; }
+
+    .snsBox > ul{
+      width:100%; height:100%;
+    }
+
+    .snsBox li{
+      float:left;
+      width:50px; height:50px;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    .snsBox li:first-child{
+      margin-right: 10px;
+      background-image: url(../../img/main/footer/facebook.png);
+      background-size: 90%;
+    }
+    
+    .snsBox li:last-child{
+      background-image: url(../../img/main/footer/instagram.png);
+      background-size: 80%;
+    }
+
+    .snsBox li a{display:block; width:100%; height:100%;}
+
+  .footer_service {
+    float:left; margin-left:20px; margin-top:60px; 
+    width:800px; height: 50px; background-color: #f5f6f7;
+    padding-top:10px; box-sizing: border-box;
+    border-radius: 12px;}
+
+    .footer_service > ul {width:100%; height:100%;}
+
+    .footer_service  li {
+      float:left; margin-right:4px;  
+      border-right:1px solid #333; box-sizing: border-box;
+      width:130px; height:30px; line-height: 30px;
+      text-align: center; font-size:10pt; }
+
+    .footer_service li:last-child{margin-right: 0; border-right:0;}
+
+    .footer_service li a {display:block; width:100%; height: 100%;}
+
+  .footer_com_info {
+    float:left; margin-left:20px; margin-top: 30px; 
+    width:650px; height: 90px; 
+    padding:5px; padding-left:15px; box-sizing: border-box;
+    background-color: #fff; border-radius: 12px;}
+  
+    .footer_com_info p {
+      color:#333; padding-top:0;
+      font-size:10pt;
+      margin-top:10px;}
+
+  .family_site_Box{
+    float:right; margin-top:30px; margin-right: 300px;
+    width:200px; height:38px; }
+
+    #site{
+      width:100%; height:100%; background-color: #f5f6f7;
+    }
+
+  .footer_recruitment {
+    float:right; margin-top:10px; margin-right:300px;
+    width:230px; height: 56px;
+    background-image: url(../../img/main/footer/download.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;}
+
+    .footer_recruitment a{
+      display:block; width:100%; height: 100%;
+      text-align: center; line-height: 60px;
+      color:#fff; 
+    }
